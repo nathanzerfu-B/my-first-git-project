@@ -1,0 +1,92 @@
+*{
+    background-color: antiquewhite;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body {
+    background-color: antiquewhite;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* NAVIGATION STYLES */
+nav {
+    background-color: hwb(36 84% 2%);
+    /* Slightly darker shade for contrast */
+    padding: 10px;
+}
+
+nav ul {
+    /* CRITICAL: This makes list items horizontal */
+    justify-content: center;
+    /* Centers the items */
+    list-style: none;
+    /* Removes bullets */
+    padding: 0;
+    margin: 0;
+    gap: 30px;
+    /* Adds space between the links */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Hover effect to make it look interactive */
+nav ul li a:hover {
+    color: #d2691e;
+}
+
+/* Layout for the main content */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    /* Centers the content on the screen */
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+    border-top:1px solid #c3b5b5;
+    border-bottom: 1px solid #c9c5c5;
+    padding-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+h1{
+font-weight: bold;
+text-align: center;
+
+}
+nav{
+}
+nav ul {
+display: flex;
+    /* This makes the LIs sit in a row */
+    list-style: none;
+    /* Removes bullet points */
+    justify-content: center;
+    /* Centers the links (or use space-around) */
+    padding: 0;
+    gap: 20px
+}
+
+nav ul li{
+ 
+}
+nav ul li a{
+    text-decoration: none;
+}
