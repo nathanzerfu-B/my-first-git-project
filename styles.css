@@ -56,6 +56,21 @@ nav ul li a:hover{
 nav ul li a:hover {
     color: #878181;
 }
+/* search btn*/
+.search-btn{
+}
+.search-btn input  {
+
+    border-radius: 30px;
+    width: max-content;
+}
+.search-btn button{
+    border-radius: 10px;
+    background-color: aqua;
+}
+.search-btn input:hover{
+color: #2f1d94;
+}
 
 /* Layout for the main content */
 main {
