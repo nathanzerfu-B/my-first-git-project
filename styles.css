@@ -9,7 +9,7 @@ body {
 h1 {
     font-weight: bold;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 /* NAVIGATION STYLES */
@@ -17,7 +17,8 @@ nav {   /* Slightly darker shade for contrast */
     padding: 10px;
     display: flex;
     border:1px solid gray;
-    
+    align-items: center;
+    justify-content: space-between;
     background-color:aqua;
 }
 nav ul {
@@ -28,17 +29,13 @@ nav ul {
     list-style: none;
     /* Removes bullets */
     padding: 0;
-    justify-content: space-between;
     gap: 30px;
     /* Adds space between the links */
 }
-nav ul a{
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
 
 nav ul li a {
+    border: 3px solid transparent;
+
     text-decoration: none;
     color: #333;
     font-weight: bold;
@@ -46,25 +43,27 @@ nav ul li a {
 
 /* Hover effect to make it look interactive */
 nav ul li a:hover{
-    border-top: 3px solid #333;
-
-        border-right: 3px solid #333;
-    border-left: 3px solid #333;
-        border-bottom:3px solid #333;
-        color:white;
+        border: 3px solid #333;
+    
 }
 
 /* search btn*/
-nav .search-btn{
-}
-nav .search-btn input  {
+.search-btn {
+    display: flex;
+    align-items: center;
+    /* Ensures the input and button align perfectly in the middle */
+    gap: 5px;padding: 5px;
+    /* distinct space between input and button */
+} 
+    .search-btn input {
+            width: 200px;
+            padding: 5px;
+        }
 
-    border-radius: 30px;
-    width: max-content;
-}
+
 nav .search-btn button{
     border-radius: 10px;
-    background-color: aqua;
+    background-color: rgb(254, 255, 255);
 }
 .search-btn input:hover{
 color: #2f1d94;
@@ -83,12 +82,19 @@ main {
 
 section {
     margin-bottom: 30px;
-    padding-bottom: 20px;border: #00c344 solid;
+    padding-bottom: 20px;
+    border: #00c344 2px solid;
         border-radius: 20px;
 }
 section h2{
 font-weight: bold;
 text-align: center;
+}section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    /* Centers the image */
 }
 section p{
     text-align:center;
@@ -96,7 +102,7 @@ section p{
 
 
 section:hover{
-    border: #2bccdb solid;
+    border: #2bccdb 2px solid;
 }
 footer {
     text-align: center;
