@@ -28,7 +28,7 @@ nav ul {
     list-style: none;
     /* Removes bullets */
     padding: 0;
-    margin-left:300px ;
+    justify-content: space-between;
     gap: 30px;
     /* Adds space between the links */
 }
@@ -43,28 +43,26 @@ nav ul li a {
     color: #333;
     font-weight: bold;
 }
+
+/* Hover effect to make it look interactive */
 nav ul li a:hover{
-    border-top: 3px solid #3
-    animation: alternate;33;
+    border-top: 3px solid #333;
+
         border-right: 3px solid #333;
     border-left: 3px solid #333;
         border-bottom:3px solid #333;
         color:white;
 }
 
-/* Hover effect to make it look interactive */
-nav ul li a:hover {
-    color: #878181;
-}
 /* search btn*/
-.search-btn{
+nav .search-btn{
 }
-.search-btn input  {
+nav .search-btn input  {
 
     border-radius: 30px;
     width: max-content;
 }
-.search-btn button{
+nav .search-btn button{
     border-radius: 10px;
     background-color: aqua;
 }
@@ -88,9 +86,14 @@ section {
     padding-bottom: 20px;border: #00c344 solid;
         border-radius: 20px;
 }
-section h2 p{
-justify-content:right;
+section h2{
+font-weight: bold;
+text-align: center;
 }
+section p{
+    text-align:center;
+    }
+
 
 section:hover{
     border: #2bccdb solid;
@@ -100,7 +103,4 @@ footer {
     padding: 20px;
     color: #333;
 }
-h2{
-font-weight: bold;
-text-align: center;
-}
+
