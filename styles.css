@@ -19,22 +19,8 @@ h1 {
 nav {   /* Slightly darker shade for contrast */
     padding: 10px;
     display: flex;
-}
-.navbar__container{
-display: flex;
-    justify-content: space-between;
-    height: 80px;
-    z-index: 1;
-    width: 100%;
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 0 40px;
-    cursor: pointer;
-}
-.navbar__container a{
-    text-decoration: none;
-color: #333;
-    font-weight: bold;
+    border:1px solid gray;
+    border
 }
 nav ul {
     display: flex;
@@ -48,6 +34,12 @@ nav ul {
     gap: 30px;
     /* Adds space between the links */
 }
+nav ul a{
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
 nav ul li a {
     text-decoration: none;
     color: #333;
