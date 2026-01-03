@@ -1,7 +1,4 @@
-*{
-    background-color: rgb(223, 167, 92);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+
 body {
     background-color: rgb(223,167,92);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -20,15 +17,17 @@ nav {   /* Slightly darker shade for contrast */
     padding: 10px;
     display: flex;
     border:1px solid gray;
-    border
+    
+    background-color:aqua;
 }
 nav ul {
     display: flex;
     /* CRITICAL: This makes list items horizontal */
-    justify-content:left;
+    justify-content:space-between;
     /* Centers the items */
     list-style: none;
     /* Removes bullets */
+    align-items: center;
     padding: 0;
     margin: 0;
     gap: 30px;
