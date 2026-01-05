@@ -1,8 +1,8 @@
 
 body {
-    background-color: rgb(237, 234, 229);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 0;
+    background-color:white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     margin: 0;
     padding: 0;
 }
 
@@ -22,7 +22,6 @@ nav {   /* Slightly darker shade for contrast */
 nav ul {
     display: flex;
     /* CRITICAL: This makes list items horizontal */
-   
     /* Centers the items */
     list-style: none;
     /* Removes bullets */
@@ -30,9 +29,12 @@ nav ul {
     gap: 30px;
     /* Adds space between the links */
 }
-
+nav ul a{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+}
 nav ul li a {
-
     text-decoration: none;
     color: #333;
     font-weight: bold;
@@ -53,13 +55,14 @@ nav ul li a:hover{
     /* distinct space between input and button */
 } 
         .search-btn input[type=text] {
-            width:160px;
+        width:160px;
         box-sizing: border-box;
         border: 2px solid #ccc;
         border-radius: 40px;
         font-size: 16px;
-        background-color: white;
+        font-weight: bold;
         background-image: url('img/icons8-search-49.png');
+        background-color: white;
         background-position: 10px 10px;
         background-repeat: no-repeat;
         padding: 10px 10px 10px 10px;
@@ -67,30 +70,24 @@ nav ul li a:hover{
 
 
 
-nav .search-btn button{
-    border-radius: 10px;
-    background-color: rgb(254, 255, 255);
-}
 .search-btn input:hover{
 color: #2f1d94;
 }
 
 /* Layout for the main content */
 main {
-
     max-width: 1000px;
     margin: 0 auto;
     /* Centers the content on the screen */
     padding: 30px;
-
-
 }
 
 section {
     margin-bottom: 30px;
     padding-bottom: 20px;
-        border-radius: 20px;
+    border-radius: 20px;
 }
+
 section h2{
 font-weight: bold;
 text-align: center;
@@ -100,6 +97,9 @@ text-align: center;
     display: block;
     margin: 10px auto;
     /* Centers the image */
+}
+section .blog-title{
+color: blueviolet;
 }
 section p{
     text-align:center;
