@@ -98,17 +98,14 @@ text-align: center;
     margin: 10px auto;
     /* Centers the image */
 }
-section .tag{
-color: blueviolet;
-}
+ 
 section p{
     text-align:center;
     }
-
-
-section:hover{
-    border: #2bccdb 2px solid;
+.tag{
+color: blueviolet;
 }
+
 footer {
     text-align: center;
     padding: 20px;
