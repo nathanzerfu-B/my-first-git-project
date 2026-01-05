@@ -16,7 +16,6 @@ h1 {
 nav {   /* Slightly darker shade for contrast */
     padding: 10px;
     display: flex;
-    border:1px solid gray;
     align-items: center;
     justify-content: space-between;
 }
@@ -33,7 +32,6 @@ nav ul {
 }
 
 nav ul li a {
-    border: 3px solid transparent;
 
     text-decoration: none;
     color: #333;
@@ -54,10 +52,19 @@ nav ul li a:hover{
     gap: 5px;padding: 5px;
     /* distinct space between input and button */
 } 
-    .search-btn input {
-            width: 200px;
-            padding: 5px;
+        .search-btn input[type=text] {
+            width:160px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 40px;
+        font-size: 16px;
+        background-color: white;
+        background-image: url('img/icons8-search-49.png');
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        padding: 10px 10px 10px 10px;
         }
+
 
 
 nav .search-btn button{
@@ -82,7 +89,6 @@ main {
 section {
     margin-bottom: 30px;
     padding-bottom: 20px;
-    border: #00c344 2px solid;
         border-radius: 20px;
 }
 section h2{
