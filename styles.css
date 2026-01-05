@@ -108,8 +108,14 @@ color:darkorchid;
 .Top-Stories ol {
 text-align:right;
 font-weight: 400;
-
 }
+.Top-Stories ol li{
+    font-size: large;
+    font-weight: bold;
+}
+ .Top-Stories ol li p{
+    font-size: 15px;
+ }
 .Container{
     display: flex;
 }
