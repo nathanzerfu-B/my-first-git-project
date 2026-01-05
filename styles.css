@@ -29,7 +29,7 @@ nav ul {
     gap: 30px;
     /* Adds space between the links */
 }
-nav ul a{
+nav  a{
     text-decoration: none;
     color:black;
     font-weight: bold;
@@ -105,7 +105,21 @@ section p{
 .tag{
 color: blueviolet;
 }
+.Top-Stories ol {
+text-align:right;
+font-weight: 400;
 
+}
+.Container{
+    display: flex;
+}
+.Container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    /* Centers the image */
+}
 footer {
     text-align: center;
     padding: 20px;
