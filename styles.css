@@ -19,7 +19,6 @@ nav {   /* Slightly darker shade for contrast */
     border:1px solid gray;
     align-items: center;
     justify-content: space-between;
-    background-color:aqua;
 }
 nav ul {
     display: flex;
