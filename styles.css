@@ -1,8 +1,7 @@
-
 body {
-    background-color:white;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-     margin: 0;
+    background-color: white;
+    font-family: Cambria, Cochin, Georgia, 'Times New Roman', serif;
+    margin: 0;
     padding: 0;
 }
 
@@ -13,115 +12,117 @@ h1 {
 }
 
 /* NAVIGATION STYLES */
-nav {   /* Slightly darker shade for contrast */
-    padding: 10px;
-    display: flex;
+nav {
+   display: flex;
     align-items: center;
     justify-content: space-between;
+      padding: 10px 30px; /* Added side padding so logo isn't stuck to edge */
 }
+
+nav a.logo { /* targeted class for the logo text */
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;
+    
+}
+
 nav ul {
     display: flex;
-    /* CRITICAL: This makes list items horizontal */
-    /* Centers the items */
     list-style: none;
-    /* Removes bullets */
     padding: 0;
     gap: 30px;
-    /* Adds space between the links */
 }
-nav  a{
-    text-decoration: none;
-    color:black;
-    font-weight: bold;
-}
+
 nav ul li a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
+    padding-bottom: 5px; /* formatting for the hover underline */
+    border-bottom: 3px solid transparent; /* prevents jumping */
 }
 
-/* Hover effect to make it look interactive */
-nav ul li a:hover{
-        border: 3px solid #333;
-    
+nav ul li a:hover {
+    border-color: #333; /* Only need to change color, not width/style */
 }
 
-/* search btn*/
+/* SEARCH BUTTON */
 .search-btn {
     display: flex;
     align-items: center;
-    /* Ensures the input and button align perfectly in the middle */
-    gap: 5px;padding: 5px;
-    /* distinct space between input and button */
-} 
-        .search-btn input[type=text] {
-        width:160px;
-        box-sizing: border-box;
-        border: 2px solid #ccc;
-        border-radius: 40px;
-        font-size: 16px;
-        font-weight: bold;
-        background-image: url('img/icons8-search-49.png');
-        background-color: white;
-        background-position: 10px 10px;
-        background-repeat: no-repeat;
-        padding: 10px 10px 10px 10px;
-        }
-
-
-
-.search-btn input:hover{
-color: #2f1d94;
 }
 
-/* Layout for the main content */
+.search-btn input[type=text] {
+    width: 200px;
+    padding: 10px 10px 10px 40px; /* Space for the icon */
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    outline: none;
+    background-image: url('img/icons8-search-49.png');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 10px center; /* Perfect centering */
+}
+
+/* MAIN LAYOUT */
 main {
     max-width: 1000px;
     margin: 0 auto;
-    /* Centers the content on the screen */
     padding: 30px;
 }
 
+/* GLOBAL IMAGE RULE - Applies to ALL images */
+
+/* SECTIONS */
 section {
     margin-bottom: 30px;
     padding-bottom: 20px;
     border-radius: 20px;
 }
 
-section h2{
-font-weight: bold;
-text-align: center;
-}section img {
+section h2 {
+    font-weight: bold;
+    text-align: center;
+}
+
+section img {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 10px auto;
     /* Centers the image */
 }
- 
-section p{
-    text-align:center;
-    }
-.tag{
-color:darkorchid;
+
+section p {
+    text-align: center;
 }
+
+.tag {
+    color: darkorchid;
+}
+
 .Top-Stories ol {
-text-align:right;
-font-weight: 400;
+    text-align: left;
+    font-weight: 400;
 }
-.Top-Stories ol li{
+
+.Top-Stories ol li {
     font-size: large;
     font-weight: bold;
 }
- .Top-Stories ol li p{
+
+.Top-Stories ol li p {
     font-size: 15px;
- }
-.Container{
+}
+
+.Container {
     display: flex;
 }
-.Container .Container-1{
-    margin:40px;
+
+.Container .Container-1 {
+    margin: 40px;
 }
+
 .Container img {
     max-width: 100%;
     height: auto;
@@ -129,25 +130,29 @@ font-weight: 400;
     margin: 10px auto;
     /* Centers the image */
 }
-.sp-1{
-border:1px solid rgb(114, 110, 110) ;
-border-radius: 10px;
-padding: 5px 5px 5px;
-color: rgb(134, 14, 194);
-background-color:rgb(221, 214, 224) ;
-margin-bottom: 50px;
-}
-.sp-2{
-border: 1px solid rgb(114, 110, 110);
+
+.sp-1 {
+    border: 1px solid rgb(114, 110, 110);
     border-radius: 10px;
-    padding:5px 5px 5px;
-    color: #2501f3;
+    padding: 5px 5px 5px;
+    color: rgb(134, 14, 194);
+    background-color: rgb(221, 214, 224);
     margin-bottom: 50px;
-    background-color:#e1deefbd;
-}
-footer {
-    text-align: center;
-    padding: 20px;
-    color: #333;
 }
 
+.sp-2 {
+    border: 1px solid rgb(114, 110, 110);
+    border-radius: 10px;
+    padding: 5px 5px 5px;
+    color: #2501f3;
+    margin-bottom: 50px;
+    background-color: #e1deefbd;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    color: #666;
+    border-top: 1px solid #eee;
+    margin-top: 50px;
+}
