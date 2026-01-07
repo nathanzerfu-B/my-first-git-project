@@ -116,18 +116,22 @@ section p {
 .Top-Stories ol li {
     font-size: large;
     font-weight: bold;
+    margin-bottom: 20px;
+        /* Added spacing between list items */
 }
 
 .Top-Stories ol li p {
     font-size: 15px;
+    text-align: left;
 }
 
 .Container {
     display: flex;
+    gap:40px;
 }
 
 .Container .Container-1 {
-    margin: 40px;
+ flex:1;
 }
 
 .Container img {
@@ -135,6 +139,7 @@ section p {
     height: auto;
     display: block;
     margin: 10px auto;
+    border-radius: 10px;
     /* Centers the image */
 }
 
