@@ -146,19 +146,21 @@ section p {
 .sp-1 {
     border: 1px solid rgb(114, 110, 110);
     border-radius: 10px;
-    padding: 5px 5px 5px;
+    padding: 5px 10px ;
     color: rgb(134, 14, 194);
     background-color: rgb(221, 214, 224);
-    margin-bottom: 50px;
+    display: inline-block;
+    margin-top: 10px;
 }
 
 .sp-2 {
     border: 1px solid rgb(114, 110, 110);
     border-radius: 10px;
-    padding: 5px 5px 5px;
+    padding: 5px 10px;
     color: #2501f3;
-    margin-bottom: 50px;
     background-color: #e1deefbd;
+    display: inline-block;
+    margin-top: 10px;
 }
 
 footer {
