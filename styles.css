@@ -79,7 +79,10 @@ section {
     padding-bottom: 20px;
     border-radius: 20px;
 }
+ #Home, tag ,p,img{
+    text-align: left;
 
+}
 section h2 {
     font-weight: bold;
     text-align: center;
