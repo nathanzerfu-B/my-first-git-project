@@ -124,6 +124,9 @@ section p {
     font-size: 15px;
     text-align: left;
 }
+.Top-Stories ol li p img {
+    display: inline-block;
+}
 
 .Container {
     display: flex;
