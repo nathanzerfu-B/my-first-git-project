@@ -100,31 +100,46 @@ section p {
     text-align: center;
 }
 
-.tag {
+.tag-1 {
     color: darkorchid;
     font-weight: bold;
         text-transform: uppercase;
         font-size: 0.9rem;
     }
+    .tag{
+        color:darkorchid
+    }
 
 
-.Top-Stories ol {
+.Top-Stories h2 {
     text-align: left;
+}
+.Top-Stories h2 h4{
     font-weight: 400;
 }
-
-.Top-Stories ol li {
+.Top-Stories div{
+    align-content: space-around;
+    border-bottom: #ccc 1px solid;
+}
+.Top-Stories .num {
+    border: #5c5555b6 2px solid;
+    border-radius: 55%;
+    padding: 5px 10px;
+    background-color: rgb(232, 227, 227);
+    margin-right: 20px;
+}
+.Top-Stories h2 h4 p {
     font-size: large;
     font-weight: bold;
     margin-bottom: 20px;
         /* Added spacing between list items */
 }
 
-.Top-Stories ol li p {
+.Top-Stories h2 h4  p {
     font-size: 15px;
     text-align: left;
 }
-.Top-Stories ol li p img {
+.Top-Stories h2  h4 p img {
     display: inline-block;
 }
 
