@@ -54,15 +54,16 @@ nav ul li a:hover {
 }
 
 .search-btn input[type=text] {
-    width: 200px;
-    padding: 10px 10px 10px 40px; /* Space for the icon */
+    width: 130px;
+    padding: 10px; /* Space for the icon */
     border: 1px solid #ccc;
     border-radius: 40px;
+    font-weight: bold;
     outline: none;
     background-image: url('img/icons8-search-49.png');
     background-size: 20px;
     background-repeat: no-repeat;
-    background-position: 10px center; /* Perfect centering */
+    background-position: center; /* Perfect centering */
 }
 
 /* MAIN LAYOUT */
@@ -84,28 +85,16 @@ section {
 section h1{
     margin-top: 0px;
 }
-
-.main-stories h1 {
-    text-align: center;
-
-}
-
 section p {
     text-align: center;
 }
-
 .tag-1 {
-    color: darkorchid;
+    color: rgb(105, 2, 208);
     font-weight: bold;
     text-align: center;
-        text-transform: uppercase;
         font-size: 0.9rem;
     }
-    .tag{
-        color:darkorchid;
-        text-align: start;
-        font-size: 0.9rem;
-    }
+    
 
 
 .Top-Stories{
@@ -143,13 +132,18 @@ section p {
 }
 .Top-Stories h2  h4 p img {
     display: inline-block;
-}
 
+}
+/* */
 .Container {
     display: flex;
     gap:40px;
 }
-
+.tag{
+        color: rgb(105, 2, 208);
+        text-align: start;
+        font-size: 0.9rem;
+    }
 .Container .Container-1 {
  flex:1;
 }
