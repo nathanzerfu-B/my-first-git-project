@@ -22,6 +22,7 @@ nav {
 nav a.logo { /* targeted class for the logo text */
     text-decoration: none;
     color: black;
+    margin-left: 120px;
     font-weight: bold;
     font-size: 1.2rem;
     
@@ -79,21 +80,14 @@ section {
     padding-bottom: 20px;
     border-radius: 20px;
 }
- #Home, .tag , p ,img{
-    text-align: left;
 
+section h1{
+    margin-top: 0px;
 }
-section h2 {
-    font-weight: bold;
+
+.main-stories h1 {
     text-align: center;
-}
 
-section img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 10px auto;
-    /* Centers the image */
 }
 
 section p {
@@ -103,12 +97,20 @@ section p {
 .tag-1 {
     color: darkorchid;
     font-weight: bold;
+    text-align: center;
         text-transform: uppercase;
         font-size: 0.9rem;
     }
     .tag{
-        color:darkorchid
+        color:darkorchid;
+        text-align: start;
+        font-size: 0.9rem;
     }
+
+
+.Top-Stories{
+    outline: none;
+} 
 
 
 .Top-Stories h2 {
