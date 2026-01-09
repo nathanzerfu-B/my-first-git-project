@@ -100,40 +100,51 @@ section p {
 .Top-Stories{
     outline: none;
 } 
-
-
 .Top-Stories h2 {
     text-align: left;
 }
-.Top-Stories h2 h4{
-    font-weight: 400;
-}
-.Top-Stories div{
+.Top-Stories .item{
+    display: flex;
     align-content: space-around;
     border-bottom: #ccc 1px solid;
+}.Top-Stories .item h4{
+
+    font-weight: 400;
 }
+.item h4 ,p{
+    text-align: left;
+    width:75%;
+}
+.item img {
+align-items: right;
+width: 25%}
 .Top-Stories .num {
     border: #5c5555b6 2px solid;
     border-radius: 55%;
     padding: 5px 10px;
     background-color: rgb(232, 227, 227);
     margin-right: 20px;
+}.Top-Stories .num3 {
+    border: #5c5555b6 2px solid;
+    border-radius: 55%;
+    padding: 5px 10px;
+    background-color: rgb(232, 227, 227);
+    margin-right: 20px;
 }
-.Top-Stories h2 h4 p {
+
+.Top-Stories div h4 p {
     font-size: large;
     font-weight: bold;
     margin-bottom: 20px;
         /* Added spacing between list items */
 }
 
-.Top-Stories h2 h4  p {
+.Top-Stories  div h4  p {
     font-size: 15px;
     text-align: left;
 }
-.Top-Stories h2  h4 p img {
-    display: inline-block;
 
-}
+
 /* */
 .Container {
     display: flex;
