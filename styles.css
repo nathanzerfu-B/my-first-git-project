@@ -54,16 +54,21 @@ nav ul li a:hover {
 }
 
 .search-btn input[type=text] {
-    width: 130px;
-    padding: 10px; /* Space for the icon */
+    width: 120px;
+    padding: 10px 5px 5px 10px; /* Space for the icon */
     border: 1px solid #ccc;
     border-radius: 40px;
-    font-weight: bold;
     outline: none;
+    font-size: 0.9rem;
+    color: #333;
+
     background-image: url('img/icons8-search-49.png');
-    background-size: 20px;
+    background-size:18px;
     background-repeat: no-repeat;
-    background-position: center; /* Perfect centering */
+    background-position: right 15px center; /* Perfect centering */
+}
+.search-btn input[type=text]:focus {
+    border-color: #333;
 }
 
 /* MAIN LAYOUT */
