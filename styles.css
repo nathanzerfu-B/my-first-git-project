@@ -5,27 +5,33 @@ body {
     padding: 0;
 }
 
+/* --- TYPOGRAPHY & HEADER --- */
 h1 {
     font-weight: bold;
     text-align: center;
     margin-top: 40px;
 }
 
-/* NAVIGATION STYLES */
-nav {
-   display: flex;
-    align-items: center;
-    justify-content: space-between;
-      padding: 10px 30px; /* Added side padding so logo isn't stuck to edge */
+.tag-1 {
+    color: rgb(105, 2, 208);
+    font-weight: bold;
+    text-align: center;
+    font-size: 0.9rem;
 }
 
-nav a.logo { /* targeted class for the logo text */
+/* --- NAVIGATION STYLES --- */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+
+nav a.logo {
     text-decoration: none;
     color: black;
-    margin-left: 120px;
     font-weight: bold;
     font-size: 1.2rem;
-    
 }
 
 nav ul {
@@ -39,122 +45,150 @@ nav ul li a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
-    padding-bottom: 5px; /* formatting for the hover underline */
-    border-bottom: 3px solid transparent; /* prevents jumping */
+    padding-bottom: 5px;
+    border-bottom: 3px solid transparent;
 }
 
 nav ul li a:hover {
-    border-color: #333; /* Only need to change color, not width/style */
+    border-color: #333;
 }
 
-/* SEARCH BUTTON */
+/* --- SEARCH BUTTON (Fixed) --- */
 .search-btn {
     display: flex;
     align-items: center;
 }
 
 .search-btn input[type=text] {
-    width: 120px;
-    padding: 10px 5px 5px 10px; /* Space for the icon */
+    width: 150px;
+    /* Large Right padding (40px) keeps text away from the icon */
+    padding: 10px 40px 10px 15px;
     border: 1px solid #ccc;
-    border-radius: 40px;
+    /* Slightly rounded rectangle */
+    border-radius: 4px;
     outline: none;
     font-size: 0.9rem;
     color: #333;
-
     background-image: url('img/icons8-search-49.png');
-    background-size:18px;
+    background-size: 18px;
     background-repeat: no-repeat;
-    background-position: right 15px center; /* Perfect centering */
+    /* Puts icon on the right side */
+    background-position: right 10px center;
 }
+
 .search-btn input[type=text]:focus {
     border-color: #333;
 }
 
-/* MAIN LAYOUT */
+/* --- MAIN LAYOUT WRAPPER --- */
 main {
     max-width: 1000px;
     margin: 0 auto;
     padding: 30px;
 }
 
-/* GLOBAL IMAGE RULE - Applies to ALL images */
-
-/* SECTIONS */
 section {
     margin-bottom: 30px;
     padding-bottom: 20px;
     border-radius: 20px;
 }
-/* Fixed 'tag' selector to '.tag' */
-#Home,
-.tag,p,img {
-    text-align: left;
-    
-}
-section h1{
+
+section h1 {
     margin-top: 0px;
-    font-weight: bold;
-        text-align: center;
 }
+
 section p {
     text-align: center;
 }
-.tag-1 {
-    color: rgb(105, 2, 208);
-    font-weight: bold;
-    text-align: center;
-        font-size: 0.9rem;
-    }
-    
-.main-stories img {
-    width: 30%;
-    height: auto;
+
+/* --- HERO SECTION (Split Layout) --- */
+.hero-section {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    margin-bottom: 50px;
 }
 
-.Top-Stories{
-    margin-bottom: 50px;
-} 
+/* Left Column: Main Story */
+.main-stories {
+    flex: 6;
+    /* 60% Width */
+}
+
+.main-stories img {
+    width: 100%;
+    /* Forces image to fill the left column */
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.tag {
+    color: rgb(105, 2, 208);
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-top: 15px;
+    text-align: left;
+}
+
+.main-stories h2,
+.main-stories p {
+    text-align: left;
+    /* Ensures main story text is left-aligned */
+}
+
+/* Right Column: Top Stories */
+.Top-Stories {
+    flex: 4;
+    /* 40% Width */
+}
+
 .Top-Stories h2 {
     text-align: left;
+    margin-top: 0;
     margin-bottom: 20px;
 }
-.story-item{
+
+/* Individual Story Item (Row) */
+.story-item {
     display: flex;
-    align-content: space-around;
+    justify-content: space-between;
+    /* Pushes Text Left, Image Right */
+    align-items: flex-start;
     margin-bottom: 20px;
-    border-bottom: #ccc 1px solid;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    gap: 15px;
 }
+
 .story-text {
     flex: 1;
-    /* Takes up remaining space */
 }
- .story-item h4{
-font-weight: bold;
+
+.story-item h4 {
+    font-weight: bold;
     margin: 0 0 10px 0;
     font-size: 1.1rem;
     display: flex;
-    /* Aligns number and text */
-    align-items: center;
+    align-items: flex-start;
+    text-align: left;
 }
-.story-item .tag {
-    color: #e009e0;
-    font-size: 0.9rem;
-    margin: 0;
-}/* Image styling */
+
 .story-item img {
-    width: 150px;
-    /* Fixed width for consistency */
-    height: 100px;
+    width: 120px;
+    /* Fixed small width for side images */
+    height: 90px;
     object-fit: cover;
-    /* Prevents image stretching */
     border-radius: 8px;
-    display: inline-block;
+    display: block;
 }
- .num {
-    border: #5c5555b6 2px solid;
+
+/* Number Circle */
+.num {
+    border: 2px solid #ccc;
     border-radius: 50%;
-width: 30px;
+    width: 30px;
     height: 30px;
     display: flex;
     align-items: center;
@@ -164,54 +198,45 @@ width: 30px;
     font-size: 0.9rem;
     color: #333;
     flex-shrink: 0;
+    margin-top: -2px;
+    /* Slight alignment adjustment */
 }
-.hero-section{display: flex;
-    /* This puts the children side-by-side */
-    gap: 40px;
-    /* Space between the Main story and Top stories */
-    align-items: flex-start;
-    /* Aligns them to the top */
-    margin-bottom: 50px;
+
+.story-item .tag {
+    color: #333;
+    font-size: 0.85rem;
+    margin: 0;
+    font-weight: normal;
 }
- /*.num3 {
-    border: #5c5555b6 2px solid;
-    border-radius: 55%;
-    padding: 5px 10px;
-    background-color: rgb(232, 227, 227);
-    margin-right: 20px;
-}*/
 
-
-
-/* */
+/* --- BOTTOM CONTAINER GRID --- */
 .Container {
     display: flex;
-    gap:40px;
+    gap: 40px;
 }
-.tag{
-        color: rgb(105, 2, 208);
-        text-align: start;
-        font-size: 0.9rem;
-        font-weight: bold;
-            margin-top: 15px;
-    }
+
 .Container .Container-1 {
- flex:1;
+    flex: 1;
 }
 
 .Container img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     display: block;
     margin: 10px auto;
     border-radius: 10px;
-    /* Centers the image */
 }
 
+.Container h3,
+.Container p {
+    text-align: left;
+}
+
+/* Bottom Tags */
 .sp-1 {
     border: 1px solid rgb(114, 110, 110);
     border-radius: 10px;
-    padding: 5px 10px ;
+    padding: 5px 10px;
     color: rgb(134, 14, 194);
     background-color: rgb(221, 214, 224);
     display: inline-block;
